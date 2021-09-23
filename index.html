@@ -16,7 +16,7 @@
   <script>
     document.addEventListener('click', musicPlay);
 function musicPlay() {
-    document.getElementById('ID').play();
+    document.getElementById('bgAudio').play();
     document.removeEventListener('click', musicPlay);
 }
   </script>
@@ -25,7 +25,7 @@ function musicPlay() {
 <video autoplay muted loop id="bgVideo">
   <source src="bgvideo.mp4" type="video/mp4">
 </video>
-<audio autoplay loop>
+<audio id="bgAudio" autoplay loop>
     <source src="bgaudio.mp3" type="audio/mp3">
 </audio>
 <!-- partial:index.partial.html -->
