@@ -13,12 +13,18 @@
   min-height: 100%;
 }
     </style>
+  <script>
+    document.addEventListener('click', musicPlay);
+function musicPlay() {
+    document.getElementById('ID').play();
+    document.removeEventListener('click', musicPlay);
+}
+  </script>
 </head>
 <body>
 <video autoplay muted loop id="bgVideo">
   <source src="bgvideo.mp4" type="video/mp4">
 </video>
-<iframe src="silence.mp3" allow="autoplay" id="audio" style="display: none"></iframe>
 <audio autoplay loop>
     <source src="bgaudio.mp3" type="audio/mp3">
 </audio>
