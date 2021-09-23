@@ -6,11 +6,17 @@
     <meta name="keywords" content="wokepam.net">
     <style>
  #bgVideo {
-  position: fixed;
+  position: relative;
   right: 0;
   bottom: 0;
   min-width: 100%;
   min-height: 100%;
+}
+ .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
 }
     </style>
   </head>
@@ -19,6 +25,6 @@
 <video autoplay muted loop id="bgVideo">
   <source src="bgvideo.mp4" type="video/mp4">
 </video>
-    <center><h1>wokepam.net isnt gay!</center></h1>
+    <div class="overlay"><center><h1>wokepam.net isnt gay!</center></h1></div>
 </body>
 </html>
